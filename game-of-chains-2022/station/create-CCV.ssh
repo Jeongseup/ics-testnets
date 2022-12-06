@@ -1,0 +1,5 @@
+#!/bin/bash
+gaiad query provider consumer-genesis station-1 -o json | jq . > ccv_station.json
+curl -s https://raw.githubusercontent.com/stationlove-ventures/ics-testnets/main/game-of-chains-2022/station/prop-9/station-fresh-genesis.json | jq . > prep_station.json
+jq -s '.[0].app_state.ccvconsumer = .[1] | .[0]' prep_station.json ccv_station.json > station-genesis.json
+sha256sum station-genesis.json

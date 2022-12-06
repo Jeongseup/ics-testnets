@@ -1,0 +1,13 @@
+{
+	"title": "Create the station chain",
+	"description": "This is a proposal to create the consumer chain \"station-1\". Visit https://github.com/Jeongseup/ics-testnets/tree/main/game-of-chains-2022/station/ for details on this proposal's data and how to join the chain.",
+	"chain_id": "station-1",
+	"initial_height": {
+		"revision_height": 1,
+		"revision_number": 1
+	},
+	"genesis_hash": "", # 수정
+	"binary_hash": "715ffaf9b0545b66159144e3dfe85ee98d7130976a582bc755d6261aa71f9615", 
+	"spawn_time": "2022-11-28T17:00:00.000000Z",
+	"deposit": "1uprov"
+}
